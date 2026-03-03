@@ -1,11 +1,11 @@
 version: "3.3"
 services:
   angular-app:
-    image: nouran10/angular-app
+    build: ./angular-app
     ports:
       - "0.0.0.0:4200:80"      
   spring-boot-app:
-    image: nouran10/spring-app
+    image: build: ./spring-app
     ports:
       - "0.0.0.0:8081:8081"
     environment:
