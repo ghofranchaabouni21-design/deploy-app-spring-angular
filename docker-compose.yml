@@ -1,11 +1,11 @@
 version: "3.3"
 services:
   angular-app:
-    build: ./angular-app
+    image: ghofranch/angular-app
     ports:
       - "0.0.0.0:4200:80"      
   spring-boot-app:
-    build: ./springboot/app
+    image: ghofranch/springboot-app
     ports:
       - "0.0.0.0:8081:8081"
     environment:
